@@ -15,3 +15,9 @@ sudo make
 sudo make install
 #在/usr/local/目录下面， 产生nginx 的目录
 #./sbin/nginx –c ./conf/nginx.conf
+# 在编译时、添加 在配置文件中添加日志
+#1、编译nginx的时候: ./configure  --with-debug
+#2、虚拟主机中:server{
+#   server_name example.com
+#   error_log /path/to/errorlog/error.log debug;
+#}
