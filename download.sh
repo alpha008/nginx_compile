@@ -3,7 +3,8 @@ FileNginx="nginx-1.13.7.tar.gz"
 FileOpenssl="openssl-1.1.0g.tar.gz"
 FilePcre="pcre-8.41.tar.gz"
 FileZlib="zlib-1.2.11.tar.gz"
-if [ ! -f "source" ]; then
+#https://udomain.dl.sourceforge.net/project/pcre/pcre/8.44/pcre-8.44.tar.gz
+if [ ! -d "source" ]; then
     echo 'source is not exist'
     mkdir source
 fi
