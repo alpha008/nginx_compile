@@ -13,6 +13,7 @@ cd source
 if [ ! -f "$FileNginx" ]; then
     echo ''${FileNginx}' is not exist'
     wget http://nginx.org/download/nginx-1.13.7.tar.gz
+    wget http://nginx.org/download/nginx-1.19.7.tar.gz
     echo 'download '${FileNginx}' sucess'
 fi
 if [ ! -f "$FileOpenssl" ]; then
@@ -23,6 +24,7 @@ fi
 if [ ! -f "$FilePcre" ]; then
     echo ''${FilePcre}' is not exist'
     wget http://ftp.pcre.org/pub/pcre/pcre-8.41.tar.gz
+    wget https://udomain.dl.sourceforge.net/project/pcre/pcre/8.44/pcre-8.44.tar.gz
     echo 'download '${FilePcre}' sucess'
 fi
 if [ ! -f "$FileZlib" ]; then
